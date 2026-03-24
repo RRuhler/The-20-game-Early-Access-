@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+ <button id="number" onclick="number()" class="number"> Click me when your at level ?????????</button>
+<h1  class="lev" id="lev"  onclick="lec()">LEVEL 1</h1>
+<button id="b1" class="button" onclick="b()"></button>
+<br>
+<p id="text">There are 20 levels good luck lol</p>
+<button onclick="nick()" class="nick" id="nick">??????</button>
+<br>
+<br>
+<br>
+<br>
+<button onclick="gm()" id="gm" class="gm">the random number machine *BROKEN*</button>
+<p id="gmn" class="gmn"></p>
+<button id="wt" class="wt" onclick="wt()">What am i?</button>
+<p id="wta" onclick="wta()"></p>
+<button class="hid" id="hid" onclick="hid()">hi there dont click me or    ...</button>
+<button class="hidennn" id="hidennn">Hi</button>
+<button id="cli" class="cli" onclick="cli()">YOU MUST GET ME TO 5.5</button>
+<p id="clie" onclick="clie()" class="clie">0</p>
+<button id="h" class="h" onclick="h()">hi</button>
+<button id="mo" class="mo" onclick="mo()">Dont click me or....!</button>
+<button id="gam" class="gam" onclick="gam">Next stage</button>
+<div id="marker" class="marker" onclick="marker()"></div>
+
+<style>.body {
+  background: #fff;
+  color: #000;
+  padding: 25px;
+  font-family: comic-sans;
+}
+.gm {
+  transform: scale(150%) translateX(190px) translateY(150px);
+}
+.gmn {
+  transform: translateX(540px) translateY(150px) scale(140%);
+  animation-name: yellowgreen;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.marker {
+  transform: translateY(-149px) translateX(90px) scale(1500%);
+  visibility: hidden;
+}
+
+.mo {
+  transform: translateY(-400px) translateX(420px);
+  visibility: hidden;
+}
+
+.hidennn {
+  visibility: hidden;
+}
+.h {
+  transform: translateY(-323px) translateX(20px);
+  visibility: hidden;
+}
+.number {
+  cursor: pointer;
+}
+.nick {
+  transform: translateY(-36px) translateX(240px);
+  opacity: 0.0;
+}
+.cli {
+  transform: translateX(80px) translateY(-50px);
+  visibility: hidden;
+}
+.clie {
+  transform: translateX(590px) translateY(-30px) scale(160%);
+  visibility: hidden;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button {
+  opacity: 0.0;
+  animation-name: rainbow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.hid {
+  transform: translateX(440px);
+  opacity: 0.0;
+}
+.button {
+  opacity: 0.0;
+  animation-name: glowrainbow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.gam {
+  transform: translateX(200px) translateY(-120px) scale(120%);
+  visibility: hidden;
+}
+.lev:active ~ .button {
+  opacity: 1.0;
+  animation-name: rainbow;
+  animation-duration: infinite;
+}
+
+.wt {
+  visibility: hidden;
+}
+
+@keyframes rainbow {
+  0%{color: red;}
+  20%{color: orange;}
+  40%{color: yellow;}
+  60%{color: green;}
+  80%{color: blue;}
+  100%{color: purple;}
+}
+
+@keyframes rainbowe {
+  0%{background-color: red;}
+  20%{background-color: orange;}
+  40%{background-color: yellow;}
+  60%{background-color: green;}
+  80%{background-color: blue;}
+  100%{background-color: purple;}
+}
+
+@keyframes yellowgreen {
+  0%{color: yellow;}
+  50%{color: green;}
+  100%{color: blue;}
+}
+@keyframes glowrainbow {
+  0%{box-shadow: 0px 0px 75px red;}
+  20%{box-shadow: 0px 0px 75px orange;}
+  40%{box-shadow: 0px 0px 75px yellow;}
+  60%{box-shadow: 0px 0px 75px green;}
+  80%{box-shadow: 0px 0px 75px blue;}
+  100%{box-shadow: 0px 0px 75px purple;}
+}
+
+@keyframes fadered {
+  0%{color: black;}
+  100%{color: red;}
+}
+
+@keyframes fadeyellow {
+  0%{color: black;}
+  100%{color: yellow;}
+}
+@keyframes redglow {
+  0%{box-shadow: 0px 0px 55px  yellow;}
+  100%{box-shadow: 0px 0px 55px red;}
+}
+
+@keyframes replace {
+  0%{color: black; background-color: black}
+  100%{color: black; background-color: black;}
+}
+
+@keyframes norm {
+  0% {color: black;}
+  100% {color: black;}
+}
+
+@keyframes white {
+  0% {color: white;}
+  100% {color: white;}
+}
+
+@keyframes whitee {
+  0% {background-color: white;}
+  100% {background-color: white;}
+}
+
+
+</style>
+
+
+
+  <script src="script.js">
+
+let it = 1;
+let itage = 1;
+let hi = document.getElementById("text");
+let mys = 1;
+let gmn = document.getElementById("gmn");
+let wtr = document.getElementById("wt");
+let nuum = document.getElementById("clie");
+let cli = document.getElementById("cli");
+let fortage = 1;
+let gam = document.getElementById("gam");
+let marker = document.getElementById("marker");   
+
+
+
+function lec() {
+  if (it === 1) {
+  it = 2;
+  document.getElementById("lev").textContent = 'LEVEL 2';
+  hi.textContent = '... 19 MoRE TO GO HAHa'
+  }
+  
+ if (it === 2) {
+    document.getElementById("b1").textContent = 'NO click';
+  }
+ if (mys === 3) {
+  document.getElementById("b1").textContent = 'NO click';
+ }
+}
+  
+ function b() {
+  
+  if (it === 2) {
+    it = 3;
+    document.getElementById("lev").textContent = 'LEVEL 3';
+    hi.textContent = 'I give up,,,,,, do you?                                                          note dont click that button again,,,,, or not :)'
+    itage = 2;
+  }
+ }
+  function number() {
+
+   if (itage === 2) {
+    document.getElementById("lev").textContent = 'LEVEL 4';
+    hi.textContent = 'THAT BUTTON WAS FOR LEVEL  ???????? NOT LEVEL 4!!!!!!'
+    itage = 3;
+   }
+
+   if (mys === 2) {
+    document.getElementById("lev").textContent = 'LEVEL 4.24958372';
+    hi.textContent = 'WHY IS THERE DECIMALS AHH WHY WHAT DID I EVEr DO WrOnG!!???';
+    document.getElementById("gm").textContent = 'the random number machine'
+    mys = 3;
+    document.getElementById("gm").style.animation = "yellowgreen 2s ease-in-out infinite, glowrainbow 2s ease-in-out infinite"
+   }
+
+  }
+  function nick() {
+
+
+    if (itage === 3) {
+    document.getElementById("lev").textContent = '?L?E?V?E?L? ???????????'
+    hi.textContent = '????????????????????????????????????????????????????';
+    document.getElementById("b1").textContent = '??????';
+    mys = 2;
+    itage = 4;
+    }
+    
+    
+  }
+
+
+function gm() {
+  if (mys === 3) {
+    gmn.textContent = Math.floor(Math.random() * 10);
+    mys = 4;
+    document.getElementById("lev").textContent = 'Level 5';
+    hi.textContent = 'Finaly a whole number phew';
+    wtr.style.visibility = "visible";
+  }
+}
+
+function wt() {
+  if (mys === 4) {
+   document.getElementById("lev").textContent = 'LEVEL thanks';
+   hi.textContent = 'Wow more buttons huh?'
+   gmn.style.visibility = "hidden";  
+   let letr = document.getElementById("gm");
+   letr.style.visibility = "hidden";
+   wtr.textContent = 'Thanks I never knew that :)';
+   document.getElementById("wta").textContent = '*your a button...*'
+   mys = 5;
+   gmn += 1;
+  }
+}
+
+function wta() {
+  if (mys === 5) {
+    document.getElementById("lev").textContent = 'LEVEL 6';
+    document.getElementById("lev").style.color = "orange";
+    hi.textContent = 'Things will get a little more harder now :) ';
+    wtr.style.visibility = "hidden";
+    document.getElementById("wta").style.visibility = "hidden";
+   document.getElementById("hidennn").style.visibility = "visible";
+    mys = 6;
+  }
+}
+
+document.getElementById("hidennn").addEventListener("mouseenter", () => {
+  if (mys === 6) {
+    document.getElementById("hid").style.opacity = "1.0";
+  }
+})
+
+document.getElementById("hidennn").addEventListener("mouseleave", () => {
+  if (mys === 6) {
+    document.getElementById("hid").style.opacity = "0.0";
+  }
+})
+
+function hid() {
+  if (mys === 6) {
+    cli.style.visibility = "visible";
+    mys = 7;
+  }
+}
+
+cli.addEventListener("click", function () {
+  if (mys === 7){
+  nuum + 0.5;
+  nuum.style.visibility = "visible";
+  cli.textContent = "HEY NO touchy!";
+  }
+ 
+});
+function clie() {
+  hi.textContent = "No buttons";
+  document.getElementById("lev").textContent = "LEVEL 7";
+  document.getElementById("clie").style.visibility = "hidden";
+  mys = 8;
+  document.getElementById("hidennn").style.visibility = "hidden";
+  document.getElementById("number").style.visibility = "hidden";
+  wtr.style.visibility = "hidden";
+  document.getElementById("cli").style.visibility = "hidden";
+  document.getElementById("mo").style.visibility = "visible";
+}
+
+hi.addEventListener("mouseenter", () => {
+  if (mys === 8) {
+    hi.style.transform = "scale(120%) translateX(-50px)";
+    document.getElementById("h").style.visibility = "visible";
+  }
+})
+
+hi.addEventListener("mouseleave", () => {
+  if (mys === 8) { hi.style.transform = "scale(100%)";
+  document.getElementById("h").style.visibility = "hidden";
+  }
+})
+
+
+
+document.getElementById("mo").addEventListener("mouseenter", () => {
+  if (mys === 8) {
+    document.getElementById("mo").textContent = "DONT CLICK NOOOO";
+    document.getElementById("mo").style.animation = "fadered 1s infinite, redglow 1s infinite";
+  }
+})
+
+document.getElementById("mo").addEventListener("mouseleave", () => {
+  if (mys === 8) {
+    document.getElementById("mo").textContent = "Dont click me or....!"
+    document.getElementById("mo").style.animation = "";
+  }
+})
+
+document.getElementById("mo").addEventListener("click", function () {
+  if (mys === 8) {
+    document.body.style.animation = "rainbowe 2s infinite";
+    document.getElementById("mo").textContent = "...No......s...T...o...P...";
+    mys = 9;
+    document.getElementById("lev").style.animation = "rainbow 1s infinite";
+    hi.style.animation = "rainbow 1s infinite";
+    document.getElementById("mo").style.animation = "rainbowe 1s infinite"
+  }
+})
+
+document.getElementById("mo").addEventListener("mouseenter", () => {
+  if (mys === 9) {
+    document.getElementById("mo").textContent = "STOP,,, I, SAID..... STOP!!!!"
+  }
+})
+
+document.getElementById("mo").addEventListener("mouseleave", () => {
+  if (mys === 9) {
+    document.getElementById("mo").textContent = "...";
+    fortage = 4
+  }
+})
+
+document.getElementById("mo").addEventListener("click", function () {
+  if (fortage === 4) {
+    document.getElementById("lev").textContent = "LEVEL 8";
+     document.getElementById("lev").style.animation = "white 1s infinite";
+    document.getElementById("mo").textContent = "..."
+    hi.style.animation = "white 1s infinite";
+    document.body.style.animation = "replace 1s infinite";
+    document.getElementById("mo").style.visibility = "hidden";
+    hi.textContent = "LETS PLAY A GAME *your mouse cant touch white or you will go to level ded*   (your mouse can touch me and the level name and the button)";
+    gam.style.visibility = "visible";
+  }
+})
+
+document.getElementById("marker").addEventListener("click", function () {
+  if (fortage === 4) {
+      
+  }
+})
+
+
+    
+  </script>
+</body>
+</html>
